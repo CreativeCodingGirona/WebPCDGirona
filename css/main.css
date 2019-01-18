@@ -2,6 +2,7 @@
   --primary: #656565;
   --secondary: #ed225d;
   --dark: #353535;
+  --medium: #c4c4c4;
   --light: #ffffff;
 }
 
@@ -15,6 +16,16 @@ h1 {
   font-size: 2.4em;
 }
 
+h2 {
+  border-left: 8px solid;
+  border-color: var(--medium);
+  padding-left: .5em;
+}
+
+section {
+  margin-bottom: 4em;
+}
+
 p {
   line-height: 1.6em;
 }
@@ -26,11 +37,20 @@ a {
 
 a:hover {
   background-color:var(--secondary);
-  color: white;
+  color: var(--light);
   position: relative;
   display: inline;
   box-shadow: 2px 2px 0 var(--secondary),
               -2px -2px 0 var(--secondary);
+}
+
+ul {
+  border-left: 1px dotted var(--secondary);
+  padding: 1em;
+}
+
+li {
+  list-style: none;
 }
 
 .wrapper {
@@ -51,6 +71,25 @@ a:hover {
 .header-logo {
   flex: 0 0;
   width: 203px;
+}
+
+.agenda-session {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.agenda-session span {
+  background-color: var(--secondary);
+  color: var(--light);
+  font-weight: 300;
+  font-size: .8em;
+  padding: 5px 10px;
+}
+
+.timeline-item_hour {
+  color: var(--secondary);
+  border-right: 1px solid var(--secondary);
+  padding-right: .6em;
 }
 
 @media (min-width: 600px) {
