@@ -11,6 +11,10 @@ body {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 2.4em;
+}
+
 p {
   line-height: 1.6em;
 }
@@ -29,8 +33,32 @@ a:hover {
               -2px -2px 0 var(--secondary);
 }
 
-
 .wrapper {
   max-width: 900px;
-  padding: 2em;
+  padding: 1em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.header-text {
+  flex: 1 0 auto;
+}
+
+.header-logo {
+  flex: 0 0;
+  width: 203px;
+}
+
+@media (min-width: 600px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .header-text {
+    width: 300px;
+  }
 }
