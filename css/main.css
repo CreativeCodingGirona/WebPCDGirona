@@ -1,0 +1,36 @@
+:root {
+  --primary: #656565;
+  --secondary: #ed225d;
+  --dark: #353535;
+  --light: #ffffff;
+}
+
+body {
+  color: var(--primary);
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  background-color:var(--secondary);
+  color: white;
+  position: relative;
+  display: inline;
+  box-shadow: 2px 2px 0 var(--secondary),
+              -2px -2px 0 var(--secondary);
+}
+
+
+.wrapper {
+  max-width: 900px;
+  padding: 2em;
+}
