@@ -92,6 +92,32 @@ li {
   padding-right: .6em;
 }
 
+.timeline-item_hightlight {
+  /* background-color: var(--medium); */
+  border-left: 4px solid var(--medium);
+  padding: .5em;
+}
+
+.hightlight {
+  border: 1px dashed var(--secondary);
+  padding: .4em;
+}
+
+.hightlight:hover {
+  border-color: var(--medium);
+}
+
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  justify-content: space-between;
+}
+
+.speaker {
+  margin-bottom: 2em;
+}
+
 @media (min-width: 600px) {
   .header {
     flex-direction: row;
