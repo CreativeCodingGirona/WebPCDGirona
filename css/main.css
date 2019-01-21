@@ -92,8 +92,15 @@ li {
   padding-right: .6em;
 }
 
-.timeline-item_hightlight {
+.timeline-item_speaker {
   /* background-color: var(--medium); */
+  border: 1px dotted var(--medium);
+  color: var(--secondary);
+  font-weight: 300;
+  padding: 0 .5em;
+}
+
+.timeline-item_hightlight {
   border-left: 4px solid var(--medium);
   padding: .5em;
 }
