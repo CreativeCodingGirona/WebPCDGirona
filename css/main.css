@@ -61,7 +61,6 @@ li {
 .header {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
 }
 
 .header-text {
@@ -70,7 +69,8 @@ li {
 
 .header-logo {
   flex: 0 0;
-  width: 203px;
+  height: 203px;
+  width: 200px;
 }
 
 .agenda-session {
@@ -126,6 +126,10 @@ li {
   margin-bottom: 2em;
 }
 
+.logo-coding-girona {
+  display: none;
+}
+
 @media (min-width: 600px) {
   .header {
     flex-direction: row;
@@ -145,6 +149,10 @@ li {
 
   .speaker-bio p {
     margin: 0;
+  }
+
+  .logo-coding-girona {
+    display: block;
   }
 
 }
