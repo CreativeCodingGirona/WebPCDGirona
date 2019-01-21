@@ -110,11 +110,12 @@ li {
 .speakers {
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px;
   justify-content: space-between;
 }
 
 .speaker {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 2em;
 }
 
@@ -126,4 +127,17 @@ li {
   .header-text {
     width: 300px;
   }
+
+  .speaker {
+    flex-direction: row;
+  }
+
+  .speaker-bio {
+    padding-left: 2em;
+  }
+
+  .speaker-bio p {
+    margin: 0;
+  }
+
 }
