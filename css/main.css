@@ -126,6 +126,13 @@ li {
   margin-bottom: 2em;
 }
 
+.speaker-image {
+  background-color: var(--medium);
+  border: 1px solid var(--secondary);
+  height: 280px;
+  width: 280px;
+}
+
 .logo-coding-girona {
   display: none;
 }
